@@ -465,7 +465,7 @@ class MemoryGUI(Frame):
 					self._memory.addPlayerScore(len(self._listOfPressed)-1)
 					if self._memory.checkGameOver():
 						self._resetButtons()
-						self._popupMsg(str(self._memory.playerHigh() + ' Won', True)
+						self._popupMsg(str(self._memory.playerHigh() + ' Won', True))
 				if not self._memory.checkGameOver():
 					self._resetButtons(tuple([x, y]))
 					self._currentLabel['text'] = self._memory._currentPlayer.getName()  + ': ' + str(self._memory._currentPlayer.getScore())
