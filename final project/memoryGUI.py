@@ -453,7 +453,6 @@ class MemoryGUI(Frame):
 		
 	def _cardButtonMain(self):
 		"""checks if card is the same as last"""
-		print(self._listOfPressed, 'begain')
 		if len(self._listOfPressed) > 1:
 			x, y = self._listOfPressed[-1]
 			x1, y1 = self._listOfPressed[-2]
@@ -472,7 +471,6 @@ class MemoryGUI(Frame):
 					self._playerLabelQueue.add(self._currentLabel)
 					self._currentLabel = self._playerLabelQueue.pop()
 					self._memory.nextPlayer()
-					print(str(self._memory._currentPlayer.getName()))
 					self._popupMsg(str(self._memory._currentPlayer.getName() + ' Turn'))
 		if self._memory.checkGameOver():
 			self._mainButtons(self._numberOfPlayers)
