@@ -1,7 +1,7 @@
 # Python-final
 created by: Isaac Hepworth
 
-this program was inspired by my kids, it is a memory game with a trist.  i used a couple of queues and array grids to make it esyier to work with. there are alot of buttons but i tryed to focus it towards kids with the pictures, i did not make it a i person game. i hope that others would find it fun, and that my kids would enjoy it. the code i have included is dealing with two array grids that i used to keep track of the cards and the images i used on the buttons.
+This program was inspired by my kids, it is a memory game with a trist.  I used a couple of queues and array grids to make it esyier to work with. There are alot of buttons but I tryed to focus it towards kids with the pictures, I did not make it a I person game. I hope that others would find it fun, and that my kids would enjoy it. The code I have included is dealing with two array grids that I used to keep track of the cards and the images I used on the buttons.
 
 for x in range(5):
 			for y in range(5):
