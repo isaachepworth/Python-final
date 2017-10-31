@@ -204,238 +204,291 @@ class MemoryGUI(Frame):
 	def _cardButtonPress1(self):
 		x = 0
 		y = 0
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))	
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress2(self):
 		x = 0
 		y = 1
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress3(self):
 		x = 0
 		y = 2
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed: 
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress4(self):
 		x = 0
 		y = 3
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress5(self):
 		x = 0
 		y = 4
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress6(self):
 		x = 1
 		y = 0
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress7(self):
 		x = 1
 		y = 1
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress8(self):
 		x = 1
 		y = 2
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress9(self):
 		x = 1
 		y = 3
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress10(self):
 		x = 1
 		y = 4
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress11(self):
 		x = 2
 		y = 0
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress12(self):
 		x = 2
 		y = 1
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress13(self):
 		x = 2
 		y = 2
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress14(self):
 		x = 2
 		y = 3
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress15(self):
 		x = 2
 		y = 4
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress16(self):
 		x = 3
 		y = 0
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress17(self):
 		x = 3
 		y = 1
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress18(self):
 		x = 3
 		y = 2
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress19(self):
 		x = 3
 		y = 3
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress20(self):
 		x = 3
 		y = 4
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress21(self):
 		x = 4
 		y = 0
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress22(self):
 		x = 4
 		y = 1
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress23(self):
 		x = 4
 		y = 2
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress24(self):
 		x = 4
 		y = 3
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
 	def _cardButtonPress25(self):
 		x = 4
 		y = 4
-		self._gridOfCards[x][y].turn()
-		self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
-		self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
-		self._cardButtonMain(x, y)
+		if tuple([x, y]) not in self._listOfPressed:
+			self._listOfPressed.append(tuple([x, y]))
+			self._gridOfCards[x][y].turn()
+			self._gridOfPictures[x][y] = PhotoImage(file = self._gridOfCards[x][y].getCardFileName())
+			self._gridOfButtons[x][y].config(image = self._gridOfPictures[x][y])
+			self._cardButtonMain()
 		
-	def _cardButtonMain(self, x, y):
-		"""checks if card is the same as last pressed"""
-		if len(self._listOfPressed) != 0:
-			x1, y1 = self._listOfPressed[-1]
+	def _cardButtonMain(self):
+		"""checks if card is the same as last"""
+		print(self._listOfPressed, 'begain')
+		if len(self._listOfPressed) > 1:
+			x, y = self._listOfPressed[-1]
+			x1, y1 = self._listOfPressed[-2]
 			if str(self._gridOfCards[x][y]) != str(self._gridOfCards[x1][y1]):
 				if str(self._gridOfCards[x][y]) == 'Headstone':
 					"""-1 point if you turned over a headstone"""
 					self._memory.addPlayerScore(-1)
-				elif len(self._listOfPressed) > 1:
-					self._memory.addPlayerScore(len(self._listOfPressed))
+				elif len(self._listOfPressed) > 2:
+					self._memory.addPlayerScore(len(self._listOfPressed)-1)
 					if self._memory.checkGameOver():
-						self._popupMsg(str(self._memory.playerHigh() + ' Won'))
-				self._resetButtons()
-				self._listOfPressed = []
-				self._listOfPressed.append(tuple([x, y]))
-				self._currentLabel['text'] = self._memory._currentPlayer.getName()  + ': ' + str(self._memory._currentPlayer.getScore())
-				self._playerLabelQueue.add(self._currentLabel)
-				self._currentLabel = self._playerLabelQueue.pop()
-				self._memory.nextPlayer()
-				self._popupMsg(str(self._memory._currentPlayer.getName() + ' Turn'))
-			else:
-				self._listOfPressed.append(tuple([x, y]))
-		else:
-			self._listOfPressed.append(tuple([x, y]))
+						self._resetButtons()
+						self._popupMsg(str(self._memory.playerHigh() + ' Won', True)
+				if not self._memory.checkGameOver():
+					self._resetButtons(tuple([x, y]))
+					self._currentLabel['text'] = self._memory._currentPlayer.getName()  + ': ' + str(self._memory._currentPlayer.getScore())
+					self._playerLabelQueue.add(self._currentLabel)
+					self._currentLabel = self._playerLabelQueue.pop()
+					self._memory.nextPlayer()
+					print(str(self._memory._currentPlayer.getName()))
+					self._popupMsg(str(self._memory._currentPlayer.getName() + ' Turn'))
+		if self._memory.checkGameOver():
+			self._mainButtons(self._numberOfPlayers)
 			
-	def _resetButtons(self):
+	def _resetButtons(self, xy = tuple([5, 5])):
 		"""resets buttons but leaves last one pressed untuched"""
-		for xandy in self._listOfPressed:
+		for xandy in self._listOfPressed[::-1]:
 			x1, y1 = xandy
-			self._gridOfCards[x1][y1].turn()
-			self._gridOfButtons[x1][y1].state = 'Normal'
-			self._gridOfPictures[x1][y1] = PhotoImage(file = self._gridOfCards[x1][y1].getCardFileName())
-			self._gridOfButtons[x1][y1].config(image = self._gridOfPictures[x1][y1])
-			
-	def _popupMsg(self, msg):
+			if xy != xandy:
+				self._gridOfCards[x1][y1].turn()
+				self._gridOfButtons[x1][y1].state = 'Normal'
+				self._gridOfPictures[x1][y1] = PhotoImage(file = self._gridOfCards[x1][y1].getCardFileName())
+				self._gridOfButtons[x1][y1].config(image = self._gridOfPictures[x1][y1])
+				self._listOfPressed.remove(xandy)
+		
+	def _popupMsg(self, msg, done = False):
 		messagebox.showinfo("Information", msg)
 								
 def main():
